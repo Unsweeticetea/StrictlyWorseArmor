@@ -1,5 +1,5 @@
 # StrictlyWorseArmor
-Sorts for any strictly worse armor given a Destiny Item Manager armor export. The script doesn't sort any exotics or items with tags so that it doesn't get filled with your infusion fodder.
+Sorts for any strictly worse armor when given a Destiny Item Manager armor export. The script doesn't sort any exotics or items with tags so that it doesn't get filled with your infusion fodder.
 
 Have Python installed to run this script.
 
