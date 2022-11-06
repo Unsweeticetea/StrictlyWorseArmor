@@ -10,4 +10,4 @@ Steps:
 4. Compare listed item IDs and delete strictly worse armor
 5. Close the script
 
-You can filter the IDs into DIM with "Id:XYZ" and mark them for deletion.
+You can filter the IDs in DIM with "Id:XYZ" and mark them for deletion.
