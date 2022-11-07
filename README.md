@@ -1,7 +1,7 @@
 # StrictlyWorseArmor
-Sorts for any strictly worse armor when given a Destiny Item Manager armor export. The script doesn't sort any class items, exotics, or armor with tags so that it doesn't fill with infusion fodder. It does not consider Mobility for non-hunter armor.
+Sorts for any strictly worse armor when given a Destiny Item Manager armor export. The script doesn't sort any class items, exotics, or armor with tags so that it doesn't fill with infusion fodder. It does not consider Mobility for non-Hunter armor.
 
-Armor_Marker.exe is found in the dist folder.
+Download Armor_Marker.exe from the latest release.
 
 Steps:
 1. Take a .csv export of your DIM armor (Settings, scroll to the bottom, click "Armor" under Inventory Spreadsheets)
