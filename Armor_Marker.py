@@ -1,6 +1,4 @@
 import pandas as pd
-import sqlite3
-from sqlite3 import Error
 import os
 
 def checkForBetter(data):
@@ -27,13 +25,16 @@ def checkForBetter(data):
 
 if __name__ == '__main__':
     global df
-    df = pd.read_csv ('destinyArmor.csv',\
-        usecols=['Name','Id','Type','Equippable','Mobility (Base)','Resilience (Base)','Recovery (Base)','Discipline (Base)','Intellect (Base)','Strength (Base)', 'Tier', 'Tag'])
-    condition =\
-            (df["Tier"] != "Exotic") &\
-            (pd.isna(df["Tag"])) &\
-            (df["Type"] != "Titan Mark") &\
-            (df["Type"] != "Warlock Bond") &\
-            (df["Type"] != "Hunter Cloak")
-    df[condition].apply(checkForBetter, axis=1)
-    input('Press ENTER to exit')
+    if os.path.exists(os.getcwd()+"\destinyArmor.csv"):
+        df = pd.read_csv ((os.getcwd()+"\destinyArmor.csv"),\
+            usecols=['Name','Id','Type','Equippable','Mobility (Base)','Resilience (Base)','Recovery (Base)','Discipline (Base)','Intellect (Base)','Strength (Base)', 'Tier', 'Tag'])
+        condition =\
+                (df["Tier"] != "Exotic") &\
+                (pd.isna(df["Tag"])) &\
+                (df["Type"] != "Titan Mark") &\
+                (df["Type"] != "Warlock Bond") &\
+                (df["Type"] != "Hunter Cloak")
+        df[condition].apply(checkForBetter, axis=1)
+        input('Press ENTER to exit')
+    else:
+        input('destinyArmor.csv not found. Press ENTER to exit.')
