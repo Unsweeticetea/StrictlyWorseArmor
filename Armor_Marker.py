@@ -18,9 +18,9 @@ def checkForBetter(data):
 
     processed = df[condition]
     if(not processed.empty):
-        print("--------------------------------------")
-        print(data[['Name']].to_string(index=False, header=False), data[['Id']].to_string(index=False, header=False))
-        print(processed[['Name']].to_string(index=False, header=False), processed[['Id']].to_string(index=False, header=False))
+        print(data['Name'],"is worse than",processed['Name'].iloc[0],\
+            "\nDIM filter: Id:"+data['Id'],"or Id:"+processed['Id'].iloc[0]+\
+            "\n________________________________________________________________\n")
     return
 
 if __name__ == '__main__':
