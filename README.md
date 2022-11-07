@@ -1,7 +1,7 @@
 # StrictlyWorseArmor
 Sorts for any strictly worse armor when given a Destiny Item Manager armor export. The script doesn't sort any class items, exotics, or armor with tags so that it doesn't fill with infusion fodder. It does not consider Mobility for non-hunter armor.
 
-Have Python installed to run this script.
+Have Python and Pandas installed to run this script. I will be compiling an executable soon so you won't need to install anything.
 
 Steps:
 1. Take a .csv export of your DIM armor (Settings, scroll to the bottom, click "Armor" under Inventory Spreadsheets)
